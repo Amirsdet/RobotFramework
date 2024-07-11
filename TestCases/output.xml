@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.9.6 on darwin)" generated="2024-07-11T11:26:37.877792" rpa="false" schemaversion="5">
+<suite id="s1" name="RegisterPageTest" source="/Users/amirouchemadaoui/PycharmProjects/RobotFramework/TestCases/RegisterPageTest.robot">
+<test id="s1-t1" name="Register Test" line="10">
+<kw name="open_Browsers" owner="keywordRegisterPage">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-11T11:26:38.019220" level="INFO">Opening browser 'chrome' to base url 'https://demo.guru99.com/test/newtours/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-11T11:26:38.018916" elapsed="4.093564"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-11T11:26:42.113478" elapsed="0.400166"/>
+</kw>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<status status="PASS" start="2024-07-11T11:26:38.017706" elapsed="4.496247"/>
+</kw>
+<kw name="click_registerLink" owner="keywordRegisterPage">
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-07-11T11:26:42.515590" level="INFO">Clicking link 'xpath://a[normalize-space()='REGISTER']'.</msg>
+<arg>${register_link}</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-11T11:26:42.514860" elapsed="0.644773"/>
+</kw>
+<status status="PASS" start="2024-07-11T11:26:42.514419" elapsed="0.645382"/>
+</kw>
+<kw name="Enter_firstName" owner="keywordRegisterPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-11T11:26:43.161022" level="INFO">Typing text 'amirouche' into text field 'amirouche'.</msg>
+<msg time="2024-07-11T11:26:43.311129" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-81.png"&gt;&lt;img src="selenium-screenshot-81.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-07-11T11:26:43.311319" level="FAIL">Element with locator 'amirouche' not found.</msg>
+<arg>${first_name}</arg>
+<arg>${FirstName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2024-07-11T11:26:43.160701" elapsed="0.151567">Element with locator 'amirouche' not found.</status>
+</kw>
+<arg>amirouche</arg>
+<status status="FAIL" start="2024-07-11T11:26:43.160239" elapsed="0.152212">Element with locator 'amirouche' not found.</status>
+</kw>
+<kw name="Enter_lastName" owner="keywordRegisterPage">
+<arg>madaoui</arg>
+<status status="NOT RUN" start="2024-07-11T11:26:43.312872" elapsed="0.000120"/>
+</kw>
+<kw name="Enter_phone" owner="keywordRegisterPage">
+<arg>107084564</arg>
+<status status="NOT RUN" start="2024-07-11T11:26:43.313221" elapsed="0.000039"/>
+</kw>
+<kw name="Enter_email" owner="keywordRegisterPage">
+<arg>amadaouio@gmail.com</arg>
+<status status="NOT RUN" start="2024-07-11T11:26:43.313432" elapsed="0.000042"/>
+</kw>
+<kw name="Enter_address" owner="keywordRegisterPage">
+<arg>15st 14st</arg>
+<status status="NOT RUN" start="2024-07-11T11:26:43.313642" elapsed="0.000035"/>
+</kw>
+<kw name="Enter_city" owner="keywordRegisterPage">
+<arg>union City</arg>
+<status status="NOT RUN" start="2024-07-11T11:26:43.313843" elapsed="0.000034"/>
+</kw>
+<kw name="Enter_province" owner="keywordRegisterPage">
+<arg>california</arg>
+<status status="NOT RUN" start="2024-07-11T11:26:43.314036" elapsed="0.000039"/>
+</kw>
+<kw name="Enter_postalCode" owner="keywordRegisterPage">
+<arg>94587</arg>
+<status status="NOT RUN" start="2024-07-11T11:26:43.314287" elapsed="0.000036"/>
+</kw>
+<kw name="Enter_country" owner="keywordRegisterPage">
+<arg>usa</arg>
+<status status="NOT RUN" start="2024-07-11T11:26:43.314492" elapsed="0.000034"/>
+</kw>
+<kw name="Enter_userName" owner="keywordRegisterPage">
+<arg>amir060</arg>
+<status status="NOT RUN" start="2024-07-11T11:26:43.314688" elapsed="0.000034"/>
+</kw>
+<kw name="Enter_password" owner="keywordRegisterPage">
+<arg>amir060</arg>
+<status status="NOT RUN" start="2024-07-11T11:26:43.314881" elapsed="0.000035"/>
+</kw>
+<kw name="Enter_Cpassword" owner="keywordRegisterPage">
+<arg>amir060</arg>
+<status status="NOT RUN" start="2024-07-11T11:26:43.315075" elapsed="0.000034"/>
+</kw>
+<kw name="click_submit" owner="keywordRegisterPage">
+<status status="NOT RUN" start="2024-07-11T11:26:43.315288" elapsed="0.000035"/>
+</kw>
+<kw name="verify_successfulLRegistration" owner="keywordRegisterPage">
+<status status="NOT RUN" start="2024-07-11T11:26:43.315484" elapsed="0.000035"/>
+</kw>
+<kw name="close_browser" owner="keywordRegisterPage">
+<status status="NOT RUN" start="2024-07-11T11:26:43.315724" elapsed="0.000051"/>
+</kw>
+<status status="FAIL" start="2024-07-11T11:26:38.017169" elapsed="5.298894">Element with locator 'amirouche' not found.</status>
+</test>
+<status status="FAIL" start="2024-07-11T11:26:37.879814" elapsed="5.436842"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="RegisterPageTest">RegisterPageTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

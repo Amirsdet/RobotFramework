@@ -1,0 +1,24 @@
+==============================================================================
+TestCases                                                                     
+==============================================================================
+TestCases.RadioBtn :: Simple example using SeleniumLibrary.                   
+==============================================================================
+Testing Radio Buttons and Check Boxes                                   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/amirouchemadaoui/PycharmProjects/RobotFramework/TestCases/RadioBtn.robot:9
+    T:  Testing Radio Buttons and Check Boxes    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/amirouchemadaoui/PycharmProjects/RobotFramework/TestCases/RadioBtn.robot:19
+      Select Radio Button    xpath=//*[@id="sex-0"]    Male
+______________________________________________________________________________
+| FAIL |
+No radio button with name 'xpath=//*[@id="sex-0"]' and value 'Male' found.
+------------------------------------------------------------------------------
+TestCases.RadioBtn :: Simple example using SeleniumLibrary.           | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+TestCases                                                             | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  /Users/amirouchemadaoui/PycharmProjects/RobotFramework/--results/pabot_results/9/output.xml

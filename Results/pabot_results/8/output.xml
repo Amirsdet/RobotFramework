@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.9.6 on darwin)" generated="2024-07-11T12:13:18.750922" rpa="false" schemaversion="5">
+<suite id="s1" name="TestCases" source="/Users/amirouchemadaoui/PycharmProjects/RobotFramework/TestCases">
+<suite id="s1-s1" name="LoginTest" source="/Users/amirouchemadaoui/PycharmProjects/RobotFramework/TestCases/LoginTest.robot">
+<test id="s1-s1-t1" name="Login test" line="11">
+<kw name="open_Browsers" owner="KeywordLoginPage">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-11T12:13:19.014906" level="INFO">Opening browser 'chrome' to base url 'https://demo.guru99.com/test/newtours/index.php'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-11T12:13:19.014552" elapsed="4.205276"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-11T12:13:23.220574" elapsed="0.384815"/>
+</kw>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<status status="PASS" start="2024-07-11T12:13:19.013341" elapsed="4.592378"/>
+</kw>
+<kw name="Enter_UserName" owner="KeywordLoginPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-11T12:13:23.608661" level="INFO">Typing text 'tutorial' into text field 'name:userName'.</msg>
+<arg>${txt_userLoginName}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-11T12:13:23.607398" elapsed="0.611318"/>
+</kw>
+<arg>tutorial</arg>
+<status status="PASS" start="2024-07-11T12:13:23.606302" elapsed="0.612736"/>
+</kw>
+<kw name="Enter_password" owner="KeywordLoginPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-11T12:13:24.220966" level="INFO">Typing text 'tutorial' into text field 'name:password'.</msg>
+<arg>${txt_userPassword}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-11T12:13:24.220256" elapsed="0.121113"/>
+</kw>
+<arg>tutorial</arg>
+<status status="PASS" start="2024-07-11T12:13:24.219456" elapsed="0.122127"/>
+</kw>
+<kw name="click_sign" owner="KeywordLoginPage">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-07-11T12:13:24.343053" level="INFO">Clicking button 'xpath://input[@name='submit']'.</msg>
+<arg>${btn_signin}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-11T12:13:24.342651" elapsed="0.749504"/>
+</kw>
+<status status="PASS" start="2024-07-11T12:13:24.341866" elapsed="0.750502"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-11T12:13:28.093065" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-11T12:13:25.092598" elapsed="3.000678"/>
+</kw>
+<kw name="verify_successfulLogin" owner="KeywordLoginPage">
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-07-11T12:13:28.110879" level="INFO">Page title is 'Login: Mercury Tours'.</msg>
+<arg>Login: Mercury Tours</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-07-11T12:13:28.094676" elapsed="0.016704"/>
+</kw>
+<status status="PASS" start="2024-07-11T12:13:28.093869" elapsed="0.017858"/>
+</kw>
+<kw name="close_browser" owner="KeywordLoginPage">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-07-11T12:13:28.113429" elapsed="0.304021"/>
+</kw>
+<status status="PASS" start="2024-07-11T12:13:28.112302" elapsed="0.305613"/>
+</kw>
+<status status="PASS" start="2024-07-11T12:13:19.012700" elapsed="9.405588"/>
+</test>
+<status status="PASS" start="2024-07-11T12:13:18.823529" elapsed="9.596024"/>
+</suite>
+<status status="PASS" start="2024-07-11T12:13:18.766002" elapsed="9.655361"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TestCases">TestCases</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="LoginTest">TestCases.LoginTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

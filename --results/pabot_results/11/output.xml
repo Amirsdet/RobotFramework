@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.9.6 on darwin)" generated="2024-07-11T12:52:07.891854" rpa="false" schemaversion="5">
+<suite id="s1" name="TestCases" source="/Users/amirouchemadaoui/PycharmProjects/RobotFramework/TestCases">
+<suite id="s1-s1" name="Scshot" source="/Users/amirouchemadaoui/PycharmProjects/RobotFramework/TestCases/scshot.robot">
+<test id="s1-s1-t1" name="LoginTc" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-11T12:52:08.119899" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/web/index.php/auth/login'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-11T12:52:08.119334" elapsed="5.142492"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-11T12:52:13.262614" elapsed="0.635395"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-11T12:52:13.899687" level="INFO">Typing text 'admin' into text field 'xpath=//input[@placeholder='Username']'.</msg>
+<arg>xpath=//input[@placeholder='Username']</arg>
+<arg>admin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-11T12:52:13.898402" elapsed="0.239341"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-11T12:52:14.139022" level="INFO">Typing text 'admin123' into text field 'xpath=//input[@placeholder='Password']'.</msg>
+<arg>xpath=//input[@placeholder='Password']</arg>
+<arg>admin123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-11T12:52:14.138461" elapsed="0.121838"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-11T12:52:17.261476" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-11T12:52:14.260649" elapsed="3.000959"/>
+</kw>
+<kw name="Capture Element Screenshot" owner="SeleniumLibrary">
+<msg time="2024-07-11T12:52:17.381453" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="logo.png"&gt;&lt;img src="logo.png" width="400px"&gt;&lt;/a&gt;</msg>
+<arg>xpath=//img[@alt='company-branding']</arg>
+<arg>logo.png</arg>
+<doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
+<status status="PASS" start="2024-07-11T12:52:17.261833" elapsed="0.119790"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2024-07-11T12:52:17.506900" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="page.png"&gt;&lt;img src="page.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>page.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2024-07-11T12:52:17.381934" elapsed="0.125106"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-07-11T12:52:17.507328" elapsed="0.101570"/>
+</kw>
+<status status="PASS" start="2024-07-11T12:52:08.118142" elapsed="9.491058"/>
+</test>
+<doc>Simple example using SeleniumLibrary.</doc>
+<status status="PASS" start="2024-07-11T12:52:07.959083" elapsed="9.650831"/>
+</suite>
+<status status="PASS" start="2024-07-11T12:52:07.934858" elapsed="9.676385"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TestCases">TestCases</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Scshot">TestCases.Scshot</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

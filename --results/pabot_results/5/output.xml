@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.9.6 on darwin)" generated="2024-07-11T12:51:44.429206" rpa="false" schemaversion="5">
+<suite id="s1" name="TestCases" source="/Users/amirouchemadaoui/PycharmProjects/RobotFramework/TestCases">
+<suite id="s1-s1" name="Frames" source="/Users/amirouchemadaoui/PycharmProjects/RobotFramework/TestCases/Frames.robot">
+<test id="s1-s1-t1" name="Handling Alerts" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-11T12:51:44.567500" level="INFO">Opening browser 'chrome' to base url 'https://seleniumpractise.blogspot.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-11T12:51:44.567177" elapsed="2.280738"/>
+</kw>
+<kw name="Select Frame" owner="SeleniumLibrary">
+<msg time="2024-07-11T12:51:46.849762" level="INFO">Selecting frame 'xpath=//*[@id="navbar-iframe"]'.</msg>
+<arg>xpath=//*[@id="navbar-iframe"]</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<status status="PASS" start="2024-07-11T12:51:46.848913" elapsed="0.033344"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-11T12:51:46.882846" level="INFO">Clicking element 'id=b-more'.</msg>
+<arg>id=b-more</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-11T12:51:46.882541" elapsed="0.160862"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-11T12:51:48.044474" level="INFO">Slept 1 second.</msg>
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-11T12:51:47.043897" elapsed="1.000929"/>
+</kw>
+<kw name="Unselect Frame" owner="SeleniumLibrary">
+<doc>Sets the main frame as the current frame.</doc>
+<status status="PASS" start="2024-07-11T12:51:48.045160" elapsed="0.003340"/>
+</kw>
+<status status="PASS" start="2024-07-11T12:51:44.566282" elapsed="3.482594"/>
+</test>
+<doc>Simple example using SeleniumLibrary.</doc>
+<status status="PASS" start="2024-07-11T12:51:44.453378" elapsed="3.596385"/>
+</suite>
+<status status="PASS" start="2024-07-11T12:51:44.436199" elapsed="3.614698"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TestCases">TestCases</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Frames">TestCases.Frames</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

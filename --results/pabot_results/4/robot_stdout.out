@@ -1,0 +1,17 @@
+==============================================================================
+TestCases                                                                     
+==============================================================================
+TestCases.Forloop :: Simple example using SeleniumLibrary.                    
+==============================================================================
+For loop5 with exit                                                   1
+2
+3
+| PASS |
+------------------------------------------------------------------------------
+TestCases.Forloop :: Simple example using SeleniumLibrary.            | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+TestCases                                                             | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Output:  /Users/amirouchemadaoui/PycharmProjects/RobotFramework/--results/pabot_results/4/output.xml

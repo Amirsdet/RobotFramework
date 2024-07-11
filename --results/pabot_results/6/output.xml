@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.9.6 on darwin)" generated="2024-07-11T12:51:48.391717" rpa="false" schemaversion="5">
+<suite id="s1" name="TestCases" source="/Users/amirouchemadaoui/PycharmProjects/RobotFramework/TestCases">
+<suite id="s1-s1" name="InputBox" source="/Users/amirouchemadaoui/PycharmProjects/RobotFramework/TestCases/InputBox.robot">
+<test id="s1-s1-t1" name="Testing Input Box" line="8">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-11T12:51:48.580850" level="INFO">Opening browser 'chrome' to base url 'https://demo.nopcommerce.com'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-11T12:51:48.580517" elapsed="2.596697"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-11T12:51:51.177766" elapsed="0.412083"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-07-11T12:51:51.636379" level="INFO">Page title is 'nopCommerce demo store'.</msg>
+<arg>nopCommerce demo store</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-07-11T12:51:51.590315" elapsed="0.046301"/>
+</kw>
+<kw name="Click Link" owner="SeleniumLibrary">
+<msg time="2024-07-11T12:51:51.638160" level="INFO">Clicking link 'xpath://a[@class='ico-login']'.</msg>
+<arg>xpath://a[@class='ico-login']</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-11T12:51:51.637141" elapsed="0.366498"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-07-11T12:51:52.004658" level="INFO">${userName} = id:Email</msg>
+<var>${userName}</var>
+<arg>id:Email</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-07-11T12:51:52.004067" elapsed="0.000687"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2024-07-11T12:51:52.046952" level="INFO">Element 'id:Email' is displayed.</msg>
+<arg>${userName}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2024-07-11T12:51:52.005338" elapsed="0.041861"/>
+</kw>
+<kw name="Element Should Be Enabled" owner="SeleniumLibrary">
+<arg>${userName}</arg>
+<doc>Verifies that element identified by ``locator`` is enabled.</doc>
+<status status="PASS" start="2024-07-11T12:51:52.047810" elapsed="0.033575"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-11T12:51:52.082117" level="INFO">Typing text 'amadaoui21@gmail.com' into text field 'id:Email'.</msg>
+<arg>${userName}</arg>
+<arg>amadaoui21@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-11T12:51:52.081694" elapsed="0.181034"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-11T12:51:57.263377" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-11T12:51:52.262986" elapsed="5.000543"/>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>${userName}</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-11T12:51:57.263791" elapsed="0.063636"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-11T12:52:00.328810" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-11T12:51:57.327818" elapsed="3.001157"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-07-11T12:52:00.329403" elapsed="0.138609"/>
+</kw>
+<status status="PASS" start="2024-07-11T12:51:48.579561" elapsed="11.888798"/>
+</test>
+<doc>Simple example using SeleniumLibrary.</doc>
+<status status="PASS" start="2024-07-11T12:51:48.420351" elapsed="12.048653"/>
+</suite>
+<status status="PASS" start="2024-07-11T12:51:48.399183" elapsed="12.070950"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TestCases">TestCases</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="InputBox">TestCases.InputBox</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

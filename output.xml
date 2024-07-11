@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.9.6 on darwin)" generated="2024-07-11T12:06:58.689815" rpa="false" schemaversion="5">
+<suite id="s1" name="RobotFramework" source="/Users/amirouchemadaoui/PycharmProjects/RobotFramework">
+<suite id="s1-s1" name="TestCases" source="/Users/amirouchemadaoui/PycharmProjects/RobotFramework/TestCases">
+<suite id="s1-s1-s1" name="RadioBtn" source="/Users/amirouchemadaoui/PycharmProjects/RobotFramework/TestCases/RadioBtn.robot">
+<test id="s1-s1-s1-t1" name="Testing Radio Buttons and Check Boxes" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-11T12:06:58.826468" level="INFO">Opening browser 'chrome' to base url 'https://www.techlistic.com/p/selenium-practice-form.html'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-11T12:06:58.826212" elapsed="5.441465"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-11T12:07:04.268308" elapsed="0.440495"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-11T12:07:04.709933" level="INFO">Typing text 'amir' into text field 'firstname'.</msg>
+<arg>firstname</arg>
+<arg>amir</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-11T12:07:04.709132" elapsed="0.206317"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-11T12:07:04.916026" level="INFO">Typing text 'Madaoui' into text field 'lastname'.</msg>
+<arg>lastname</arg>
+<arg>Madaoui</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-11T12:07:04.915755" elapsed="0.115804"/>
+</kw>
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<msg time="2024-07-11T12:07:05.032173" level="INFO">Selecting 'Male' from radio button 'xpath=//*[@id="sex-0"]'.</msg>
+<msg time="2024-07-11T12:07:05.210450" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-20.png"&gt;&lt;img src="selenium-screenshot-20.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-07-11T12:07:05.210647" level="FAIL">No radio button with name 'xpath=//*[@id="sex-0"]' and value 'Male' found.</msg>
+<arg>xpath=//*[@id="sex-0"]</arg>
+<arg>Male</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="FAIL" start="2024-07-11T12:07:05.031901" elapsed="0.179723">No radio button with name 'xpath=//*[@id="sex-0"]' and value 'Male' found.</status>
+</kw>
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<arg>exp</arg>
+<arg>5</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="NOT RUN" start="2024-07-11T12:07:05.211879" elapsed="0.000040"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=datepicker</arg>
+<arg>16-10-2024</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-07-11T12:07:05.212072" elapsed="0.000032"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<arg>window.scrollTo(1011,1013)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" start="2024-07-11T12:07:05.212257" elapsed="0.000031"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<arg>id=profession-0</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-07-11T12:07:05.212428" elapsed="0.000031"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<arg>id=profession-1</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-07-11T12:07:05.212614" elapsed="0.000030"/>
+</kw>
+<kw name="Unselect Checkbox" owner="SeleniumLibrary">
+<arg>id=profession-0</arg>
+<doc>Removes the selection of checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-07-11T12:07:05.212784" elapsed="0.000031"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<arg>continents</arg>
+<arg>North America</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="NOT RUN" start="2024-07-11T12:07:05.212956" elapsed="0.000030"/>
+</kw>
+<kw name="Select From List By Index" owner="SeleniumLibrary">
+<arg>continents</arg>
+<arg>5</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="NOT RUN" start="2024-07-11T12:07:05.213132" elapsed="0.000030"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<arg>window.scrollTo(1311,1313)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" start="2024-07-11T12:07:05.213303" elapsed="0.000031"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<arg>id=selenium_commands</arg>
+<arg>WebElement Commands</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="NOT RUN" start="2024-07-11T12:07:05.213469" elapsed="0.000030"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="NOT RUN" start="2024-07-11T12:07:05.213649" elapsed="0.000030"/>
+</kw>
+<status status="FAIL" start="2024-07-11T12:06:58.825271" elapsed="6.388657">No radio button with name 'xpath=//*[@id="sex-0"]' and value 'Male' found.</status>
+</test>
+<doc>Simple example using SeleniumLibrary.</doc>
+<status status="FAIL" start="2024-07-11T12:06:58.712662" elapsed="6.501690"/>
+</suite>
+<status status="FAIL" start="2024-07-11T12:06:58.711746" elapsed="6.503315"/>
+</suite>
+<status status="FAIL" start="2024-07-11T12:06:58.691790" elapsed="6.523739"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="RobotFramework">RobotFramework</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="TestCases">RobotFramework.TestCases</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="RadioBtn">RobotFramework.TestCases.RadioBtn</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-07-11T12:06:58.665831" level="WARN">Error in file '/Users/amirouchemadaoui/PycharmProjects/RobotFramework/Resources/src.robot' on line 10: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+</errors>
+</robot>

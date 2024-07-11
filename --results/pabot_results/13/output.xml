@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.9.6 on darwin)" generated="2024-07-11T12:52:11.571312" rpa="false" schemaversion="5">
+<suite id="s1" name="TestCases" source="/Users/amirouchemadaoui/PycharmProjects/RobotFramework/TestCases">
+<suite id="s1-s1" name="Tabbedwindow" source="/Users/amirouchemadaoui/PycharmProjects/RobotFramework/TestCases/Tabbedwindow.robot">
+<test id="s1-s1-t1" name="Handling Navigation Keywords" line="30">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-11T12:52:11.712565" level="INFO">Opening browser 'chrome' to base url 'http://www.google.com/'.</msg>
+<arg>http://www.google.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-11T12:52:11.712277" elapsed="2.870462"/>
+</kw>
+<kw name="Get Location" owner="SeleniumLibrary">
+<msg time="2024-07-11T12:52:14.589573" level="INFO">${loc} = https://www.google.com/</msg>
+<var>${loc}</var>
+<doc>Returns the current browser window URL.</doc>
+<status status="PASS" start="2024-07-11T12:52:14.583306" elapsed="0.006330"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-11T12:52:14.589843" elapsed="0.381636"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-11T12:52:14.972889" level="INFO">Typing text 'schools' into text field 'id=APjFqb'.</msg>
+<arg>id=APjFqb</arg>
+<arg>schools</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-11T12:52:14.971860" elapsed="0.166833"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2024-07-11T12:52:15.139619" level="INFO">Sending key(s) ('ENTER',) to id=APjFqb element.</msg>
+<msg time="2024-07-11T12:52:15.432373" level="INFO">Pressing special key ENTER to element.</msg>
+<msg time="2024-07-11T12:52:15.432465" level="INFO">Releasing special key ENTER.</msg>
+<arg>id=APjFqb</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2024-07-11T12:52:15.139009" elapsed="1.601663"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${loc}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-07-11T12:52:16.741146" elapsed="0.000509"/>
+</kw>
+<kw name="Go Back" owner="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" start="2024-07-11T12:52:16.742002" elapsed="0.054628"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-11T12:52:26.797845" level="INFO">Slept 10 seconds.</msg>
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-11T12:52:16.797111" elapsed="10.000873"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-11T12:52:26.798516" level="INFO">Typing text 'maps' into text field 'id=APjFqb'.</msg>
+<arg>id=APjFqb</arg>
+<arg>maps</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-11T12:52:26.798214" elapsed="0.096505"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2024-07-11T12:52:26.896034" level="INFO">Sending key(s) ('ENTER',) to id=APjFqb element.</msg>
+<msg time="2024-07-11T12:52:27.181257" level="INFO">Pressing special key ENTER to element.</msg>
+<msg time="2024-07-11T12:52:27.181430" level="INFO">Releasing special key ENTER.</msg>
+<arg>id=APjFqb</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2024-07-11T12:52:26.895214" elapsed="1.134567"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-07-11T12:52:28.030464" level="INFO">Opening url 'http://www.bing.com/'</msg>
+<arg>http://www.bing.com/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-07-11T12:52:28.030148" elapsed="0.552831"/>
+</kw>
+<kw name="Get Location" owner="SeleniumLibrary">
+<msg time="2024-07-11T12:52:28.592044" level="INFO">${loc} = https://www.bing.com/</msg>
+<var>${loc}</var>
+<doc>Returns the current browser window URL.</doc>
+<status status="PASS" start="2024-07-11T12:52:28.583444" elapsed="0.008730"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-11T12:52:28.592574" elapsed="0.005052"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-11T12:52:28.598592" level="INFO">Typing text 'bing' into text field 'id=sb_form_q'.</msg>
+<arg>id=sb_form_q</arg>
+<arg>bing</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-11T12:52:28.598026" elapsed="0.100096"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2024-07-11T12:52:28.699285" level="INFO">Sending key(s) ('ENTER',) to id=sb_form_q element.</msg>
+<msg time="2024-07-11T12:52:28.981621" level="INFO">Pressing special key ENTER to element.</msg>
+<msg time="2024-07-11T12:52:28.981776" level="INFO">Releasing special key ENTER.</msg>
+<arg>id=sb_form_q</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2024-07-11T12:52:28.698529" elapsed="0.291634"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-11T12:52:31.992280" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-11T12:52:28.990669" elapsed="3.001752"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${loc}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-07-11T12:52:31.992666" elapsed="0.019478"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-11T12:52:35.013030" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-11T12:52:32.012422" elapsed="3.000766"/>
+</kw>
+<kw name="Go Back" owner="SeleniumLibrary">
+<doc>Simulates the user clicking the back button on their browser.</doc>
+<status status="PASS" start="2024-07-11T12:52:35.013549" elapsed="0.034784"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2024-07-11T12:52:35.048759" elapsed="0.144748"/>
+</kw>
+<status status="PASS" start="2024-07-11T12:52:11.711359" elapsed="23.482462"/>
+</test>
+<doc>Simple example using SeleniumLibrary.</doc>
+<status status="PASS" start="2024-07-11T12:52:11.595306" elapsed="23.599240"/>
+</suite>
+<status status="PASS" start="2024-07-11T12:52:11.577910" elapsed="23.617666"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TestCases">TestCases</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Tabbedwindow">TestCases.Tabbedwindow</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

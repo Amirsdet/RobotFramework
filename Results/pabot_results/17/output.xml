@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.9.6 on darwin)" generated="2024-07-11T12:14:03.134885" rpa="false" schemaversion="5">
+<suite id="s1" name="TestCases" source="/Users/amirouchemadaoui/PycharmProjects/RobotFramework/TestCases">
+<suite id="s1-s1" name="tableValidation" source="/Users/amirouchemadaoui/PycharmProjects/RobotFramework/TestCases/tableValidation.robot">
+<test id="s1-s1-t1" name="TC1" line="9">
+<kw name="launchBrowser" owner="src">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-11T12:14:03.456704" level="INFO">Opening browser 'chrome' to base url 'https://testautomationpractice.blogspot.com/'.</msg>
+<arg>${appUrl}</arg>
+<arg>${appBrowser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-11T12:14:03.456336" elapsed="6.637691"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-11T12:14:10.095286" elapsed="0.160455"/>
+</kw>
+<kw name="Get Title" owner="SeleniumLibrary">
+<msg time="2024-07-11T12:14:10.263010" level="INFO">${title} = Automation Testing Practice</msg>
+<var>${title}</var>
+<doc>Returns the title of the current page.</doc>
+<status status="PASS" start="2024-07-11T12:14:10.256053" elapsed="0.007045"/>
+</kw>
+<return>
+<value>${title}</value>
+<status status="PASS" start="2024-07-11T12:14:10.263271" elapsed="0.000216"/>
+</return>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<status status="PASS" start="2024-07-11T12:14:03.455081" elapsed="6.808841"/>
+</kw>
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<msg time="2024-07-11T12:14:10.280964" level="INFO">${rows} = 7</msg>
+<var>${rows}</var>
+<arg>xpath=//table[@name='BookTable']/tbody/tr</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="PASS" start="2024-07-11T12:14:10.264261" elapsed="0.016775"/>
+</kw>
+<kw name="Get Element Count" owner="SeleniumLibrary">
+<msg time="2024-07-11T12:14:10.295595" level="INFO">${cols} = 4</msg>
+<var>${cols}</var>
+<arg>xpath=//table[@name='BookTable']/tbody/tr[1]/th</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="PASS" start="2024-07-11T12:14:10.281398" elapsed="0.014319"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${rows}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-07-11T12:14:10.296160" elapsed="0.000714"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${cols}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-07-11T12:14:10.297221" elapsed="0.000460"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-07-11T12:14:10.332183" level="INFO">${el1} = Master In Selenium</msg>
+<var>${el1}</var>
+<arg>xpath=//table[@name='BookTable']/tbody/tr[5]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-11T12:14:10.297949" elapsed="0.034305"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${el1}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-07-11T12:14:10.332524" elapsed="0.000377"/>
+</kw>
+<status status="PASS" start="2024-07-11T12:14:03.454116" elapsed="6.879040"/>
+</test>
+<test id="s1-s1-t2" name="TC2" line="17">
+<kw name="Table Column Should Contain" owner="SeleniumLibrary">
+<arg>xpath=//table[@name=('BookTable')]</arg>
+<arg>2</arg>
+<arg>Amit</arg>
+<doc>Verifies table column contains text ``expected``.</doc>
+<status status="PASS" start="2024-07-11T12:14:10.334121" elapsed="0.074603"/>
+</kw>
+<kw name="Table Row Should Contain" owner="SeleniumLibrary">
+<arg>xpath=//table[@name='BookTable']</arg>
+<arg>5</arg>
+<arg>3000</arg>
+<doc>Verifies that table row contains text ``expected``.</doc>
+<status status="PASS" start="2024-07-11T12:14:10.409014" elapsed="0.049968"/>
+</kw>
+<kw name="Table Cell Should Contain" owner="SeleniumLibrary">
+<msg time="2024-07-11T12:14:10.522624" level="INFO">Table cell contains '1000'.</msg>
+<arg>xpath=//table[@name='BookTable']</arg>
+<arg>7</arg>
+<arg>4</arg>
+<arg>1000</arg>
+<doc>Verifies table cell contains text ``expected``.</doc>
+<status status="PASS" start="2024-07-11T12:14:10.459437" elapsed="0.063325"/>
+</kw>
+<status status="PASS" start="2024-07-11T12:14:10.333602" elapsed="0.189537"/>
+</test>
+<doc>Simple example using SeleniumLibrary.</doc>
+<status status="PASS" start="2024-07-11T12:14:03.211814" elapsed="7.312085"/>
+</suite>
+<status status="PASS" start="2024-07-11T12:14:03.157688" elapsed="7.367868"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="TestCases">TestCases</stat>
+<stat pass="2" fail="0" skip="0" id="s1-s1" name="tableValidation">TestCases.tableValidation</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-07-11T12:14:03.417296" level="WARN">Error in file '/Users/amirouchemadaoui/PycharmProjects/RobotFramework/Resources/src.robot' on line 10: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+</errors>
+</robot>

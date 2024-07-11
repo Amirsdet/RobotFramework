@@ -1,0 +1,29 @@
+==============================================================================
+TestCases                                                                     
+==============================================================================
+TestCases.RegisterPageTest                                                    
+==============================================================================
+Register Test                                                           
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/amirouchemadaoui/PycharmProjects/RobotFramework/TestCases/RegisterPageTest.robot:10
+    T:  Register Test    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/amirouchemadaoui/PycharmProjects/RobotFramework/TestCases/RegisterPageTest.robot:14
+      Enter_firstName    amirouche
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/amirouchemadaoui/PycharmProjects/RobotFramework/Resources/keywordRegisterPage.robot:14
+      Input Text    ${first_name}    ${FirstName}
+      |  ${first_name} = amirouche (str)
+      |  ${FirstName} = amirouche (str)
+______________________________________________________________________________
+| FAIL |
+Element with locator 'amirouche' not found.
+------------------------------------------------------------------------------
+TestCases.RegisterPageTest                                            | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+TestCases                                                             | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  /Users/amirouchemadaoui/PycharmProjects/RobotFramework/--results/pabot_results/10/output.xml

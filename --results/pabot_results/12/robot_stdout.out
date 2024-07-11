@@ -1,0 +1,34 @@
+==============================================================================
+TestCases                                                                     
+==============================================================================
+TestCases.SetupTeardown                                                       
+==============================================================================
+Opening browser suite setup
+TC1: prepaid Recharge                                                 login to app test setup
+this is tc1
+logout from app test teardown
+| PASS |
+------------------------------------------------------------------------------
+TC2: Postpaid Recharge                                                login to app test setup
+this is TC2
+logout from app test teardown
+| PASS |
+------------------------------------------------------------------------------
+TC3: search                                                           login to app test setup
+this is TC3
+logout from app test teardown
+| PASS |
+------------------------------------------------------------------------------
+TC4: Advanced search                                                  login to app test setup
+this is TC4clear
+logout from app test teardown
+| PASS |
+------------------------------------------------------------------------------
+Closing Browser suite teardown
+TestCases.SetupTeardown                                               | PASS |
+4 tests, 4 passed, 0 failed
+==============================================================================
+TestCases                                                             | PASS |
+4 tests, 4 passed, 0 failed
+==============================================================================
+Output:  /Users/amirouchemadaoui/PycharmProjects/RobotFramework/--results/pabot_results/12/output.xml

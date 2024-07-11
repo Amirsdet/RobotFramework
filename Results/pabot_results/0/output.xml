@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.9.6 on darwin)" generated="2024-07-11T12:12:57.183970" rpa="false" schemaversion="5">
+<suite id="s1" name="TestCases" source="/Users/amirouchemadaoui/PycharmProjects/RobotFramework/TestCases">
+<suite id="s1-s1" name="Alerts" source="/Users/amirouchemadaoui/PycharmProjects/RobotFramework/TestCases/Alerts.robot">
+<test id="s1-s1-t1" name="Handling Alerts" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-11T12:12:57.339793" level="INFO">Opening browser 'chrome' to base url 'https://seleniumpractise.blogspot.com/'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-11T12:12:57.339443" elapsed="3.050773"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-11T12:13:00.392274" level="INFO">Clicking element 'xpath=//*[@id="post-body-9011060868494634961"]/button'.</msg>
+<arg>xpath=//*[@id="post-body-9011060868494634961"]/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-11T12:13:00.391135" elapsed="0.079312"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-11T12:13:11.471518" level="INFO">Slept 11 seconds.</msg>
+<arg>11</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-11T12:13:00.470863" elapsed="11.000879"/>
+</kw>
+<kw name="Handle Alert" owner="SeleniumLibrary">
+<msg time="2024-07-11T12:13:11.472907" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<arg>accept</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<status status="PASS" start="2024-07-11T12:13:11.472279" elapsed="0.073403"/>
+</kw>
+<status status="PASS" start="2024-07-11T12:12:57.338350" elapsed="14.207911"/>
+</test>
+<doc>Simple example using SeleniumLibrary.</doc>
+<status status="PASS" start="2024-07-11T12:12:57.208596" elapsed="14.338837"/>
+</suite>
+<status status="PASS" start="2024-07-11T12:12:57.191200" elapsed="14.358886"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TestCases">TestCases</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Alerts">TestCases.Alerts</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

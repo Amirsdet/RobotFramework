@@ -1,0 +1,18 @@
+==============================================================================
+TestCases                                                                     
+==============================================================================
+TestCases.mouseManipulation :: Simple example using SeleniumLibrary.          
+==============================================================================
+Right click                                                           | PASS |
+------------------------------------------------------------------------------
+Double click                                                          | PASS |
+------------------------------------------------------------------------------
+Drag and drop                                                         | PASS |
+------------------------------------------------------------------------------
+TestCases.mouseManipulation :: Simple example using SeleniumLibrary.  | PASS |
+3 tests, 3 passed, 0 failed
+==============================================================================
+TestCases                                                             | PASS |
+3 tests, 3 passed, 0 failed
+==============================================================================
+Output:  /Users/amirouchemadaoui/PycharmProjects/RobotFramework/Results/pabot_results/16/output.xml

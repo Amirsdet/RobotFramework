@@ -1,0 +1,32 @@
+==============================================================================
+TestCases                                                                     
+==============================================================================
+TestCases.DBTesting                                                           
+==============================================================================
+check if existing name in mydb.person                                   
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/amirouchemadaoui/PycharmProjects/RobotFramework/TestCases/DBTesting.robot:26
+    T:  check if existing name in mydb.person    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  /Users/amirouchemadaoui/PycharmProjects/RobotFramework/TestCases/DBTesting.robot:31
+      Row Count Is Equal To X    select * from mydb.person    10
+______________________________________________________________________________
+| FAIL |
+Expected 10 rows, but 9 were returned from: 'select * from mydb.person'
+------------------------------------------------------------------------------
+update record in person table                                         None
+| PASS |
+------------------------------------------------------------------------------
+retrieve records from person table                                    | PASS |
+------------------------------------------------------------------------------
+Delete record from person table                                       None
+| PASS |
+------------------------------------------------------------------------------
+TestCases.DBTesting                                                   | FAIL |
+4 tests, 3 passed, 1 failed
+==============================================================================
+TestCases                                                             | FAIL |
+4 tests, 3 passed, 1 failed
+==============================================================================
+Output:  /Users/amirouchemadaoui/PycharmProjects/RobotFramework/Results/pabot_results/1/output.xml

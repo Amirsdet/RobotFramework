@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.9.6 on darwin)" generated="2024-07-11T12:52:11.147207" rpa="false" schemaversion="5">
+<suite id="s1" name="TestCases" source="/Users/amirouchemadaoui/PycharmProjects/RobotFramework/TestCases">
+<suite id="s1-s1" name="SetupTeardown" source="/Users/amirouchemadaoui/PycharmProjects/RobotFramework/TestCases/SetupTeardown.robot">
+<kw name="Log To Console" owner="BuiltIn" type="SETUP">
+<arg>Opening browser suite setup</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-07-11T12:52:11.177213" elapsed="0.000325"/>
+</kw>
+<test id="s1-s1-t1" name="TC1: prepaid Recharge" line="9">
+<kw name="Log To Console" owner="BuiltIn" type="SETUP">
+<arg>login to app test setup</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-07-11T12:52:11.178207" elapsed="0.000247"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>this is tc1</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-07-11T12:52:11.178626" elapsed="0.000999"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn" type="TEARDOWN">
+<arg>logout from app test teardown</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-07-11T12:52:11.179890" elapsed="0.000219"/>
+</kw>
+<tag>sanity</tag>
+<status status="PASS" start="2024-07-11T12:52:11.177739" elapsed="0.002460"/>
+</test>
+<test id="s1-s1-t2" name="TC2: Postpaid Recharge" line="12">
+<kw name="Log To Console" owner="BuiltIn" type="SETUP">
+<arg>login to app test setup</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-07-11T12:52:11.180912" elapsed="0.000229"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>this is TC2</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-07-11T12:52:11.181305" elapsed="0.000210"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn" type="TEARDOWN">
+<arg>logout from app test teardown</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-07-11T12:52:11.181759" elapsed="0.000212"/>
+</kw>
+<tag>regression</tag>
+<status status="PASS" start="2024-07-11T12:52:11.180513" elapsed="0.001546"/>
+</test>
+<test id="s1-s1-t3" name="TC3: search" line="15">
+<kw name="Log To Console" owner="BuiltIn" type="SETUP">
+<arg>login to app test setup</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-07-11T12:52:11.182725" elapsed="0.000215"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>this is TC3</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-07-11T12:52:11.183102" elapsed="0.000195"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn" type="TEARDOWN">
+<arg>logout from app test teardown</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-07-11T12:52:11.183523" elapsed="0.000212"/>
+</kw>
+<tag>regression</tag>
+<status status="PASS" start="2024-07-11T12:52:11.182355" elapsed="0.001466"/>
+</test>
+<test id="s1-s1-t4" name="TC4: Advanced search" line="18">
+<kw name="Log To Console" owner="BuiltIn" type="SETUP">
+<arg>login to app test setup</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-07-11T12:52:11.184478" elapsed="0.000208"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>this is TC4clear</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-07-11T12:52:11.184841" elapsed="0.000194"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn" type="TEARDOWN">
+<arg>logout from app test teardown</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-07-11T12:52:11.185269" elapsed="0.000193"/>
+</kw>
+<tag>sanity</tag>
+<status status="PASS" start="2024-07-11T12:52:11.184103" elapsed="0.001440"/>
+</test>
+<kw name="Log To Console" owner="BuiltIn" type="TEARDOWN">
+<arg>Closing Browser suite teardown</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-07-11T12:52:11.186006" elapsed="0.000202"/>
+</kw>
+<status status="PASS" start="2024-07-11T12:52:11.175346" elapsed="0.010934"/>
+</suite>
+<status status="PASS" start="2024-07-11T12:52:11.154068" elapsed="0.032945"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="2" fail="0" skip="0">regression</stat>
+<stat pass="2" fail="0" skip="0">sanity</stat>
+</tag>
+<suite>
+<stat pass="4" fail="0" skip="0" id="s1" name="TestCases">TestCases</stat>
+<stat pass="4" fail="0" skip="0" id="s1-s1" name="SetupTeardown">TestCases.SetupTeardown</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

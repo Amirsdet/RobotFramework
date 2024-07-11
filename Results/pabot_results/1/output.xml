@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.9.6 on darwin)" generated="2024-07-11T12:12:57.184417" rpa="false" schemaversion="5">
+<suite id="s1" name="TestCases" source="/Users/amirouchemadaoui/PycharmProjects/RobotFramework/TestCases">
+<suite id="s1-s1" name="DBTesting" source="/Users/amirouchemadaoui/PycharmProjects/RobotFramework/TestCases/DBTesting.robot">
+<kw name="Connect To Database" owner="DatabaseLibrary" type="SETUP">
+<msg time="2024-07-11T12:12:57.381806" level="INFO">Connecting using : pymysql.connect(db=mydb, user=root, passwd=***, host=localhost, port=3306, charset=None)</msg>
+<arg>pymysql</arg>
+<arg>${DBName}</arg>
+<arg>${DBUser}</arg>
+<arg>${DBPass}</arg>
+<arg>${DBHost}</arg>
+<arg>${DBPort}</arg>
+<doc>Loads the DB API 2.0 module given ``dbapiModuleName`` then uses it to
+connect to the database using provided parameters such as ``dbName``, ``dbUsername``, and ``dbPassword``.</doc>
+<status status="PASS" start="2024-07-11T12:12:57.362879" elapsed="0.023423"/>
+</kw>
+<test id="s1-s1-t1" name="check if existing name in mydb.person" line="26">
+<kw name="Check If Exists In Database" owner="DatabaseLibrary">
+<msg time="2024-07-11T12:12:57.387442" level="INFO">Executing : Check If Exists In Database  |  select id from mydb.person where last_name="Brown"</msg>
+<msg time="2024-07-11T12:12:57.387501" level="INFO">Executing : Query  |  select id from mydb.person where last_name="Brown" </msg>
+<arg>select id from mydb.person where last_name="Brown"</arg>
+<doc>Check if any row would be returned by given the input ``selectStatement``. If there are no results, then this will
+throw an AssertionError.</doc>
+<status status="PASS" start="2024-07-11T12:12:57.387177" elapsed="0.001118"/>
+</kw>
+<kw name="Check If Not Exists In Database" owner="DatabaseLibrary">
+<msg time="2024-07-11T12:12:57.388669" level="INFO">Executing : Check If Not Exists In Database  |  select id from mydb.person where last_name="Browrn"</msg>
+<msg time="2024-07-11T12:12:57.388718" level="INFO">Executing : Query  |  select id from mydb.person where last_name="Browrn" </msg>
+<arg>select id from mydb.person where last_name="Browrn"</arg>
+<doc>This is the negation of `check_if_exists_in_database`.</doc>
+<status status="PASS" start="2024-07-11T12:12:57.388480" elapsed="0.000711"/>
+</kw>
+<kw name="Table Must Exist" owner="DatabaseLibrary">
+<msg time="2024-07-11T12:12:57.389552" level="INFO">Executing : Table Must Exist  |  person</msg>
+<msg time="2024-07-11T12:12:57.389609" level="INFO">Executing : Row Count  |  SELECT * FROM information_schema.tables WHERE table_name='person'</msg>
+<arg>person</arg>
+<doc>Check if the given table exists in the database.</doc>
+<status status="PASS" start="2024-07-11T12:12:57.389376" elapsed="0.003071"/>
+</kw>
+<kw name="Row Count Is 0" owner="DatabaseLibrary">
+<msg time="2024-07-11T12:12:57.392931" level="INFO">Executing : Row Count Is 0  |  select * from mydb.person where first_name="adfgdfgdfg"</msg>
+<msg time="2024-07-11T12:12:57.392981" level="INFO">Executing : Row Count  |  select * from mydb.person where first_name="adfgdfgdfg"</msg>
+<arg>select * from mydb.person where first_name="adfgdfgdfg"</arg>
+<doc>Check if any rows are returned from the submitted ``selectStatement``. If there are, then this will throw an
+AssertionError.</doc>
+<status status="PASS" start="2024-07-11T12:12:57.392723" elapsed="0.000804"/>
+</kw>
+<kw name="Row Count Is Equal To X" owner="DatabaseLibrary">
+<msg time="2024-07-11T12:12:57.393910" level="INFO">Executing : Row Count Is Equal To X  |  select * from mydb.person  |  10</msg>
+<msg time="2024-07-11T12:12:57.393958" level="INFO">Executing : Row Count  |  select * from mydb.person</msg>
+<msg time="2024-07-11T12:12:57.394514" level="FAIL">Expected 10 rows, but 9 were returned from: 'select * from mydb.person'</msg>
+<arg>select * from mydb.person</arg>
+<arg>10</arg>
+<doc>Check if the number of rows returned from ``selectStatement`` is equal to the value submitted. If not, then this
+will throw an AssertionError.</doc>
+<status status="FAIL" start="2024-07-11T12:12:57.393727" elapsed="0.001861">Expected 10 rows, but 9 were returned from: 'select * from mydb.person'</status>
+</kw>
+<kw name="Row Count Is Greater Than X" owner="DatabaseLibrary">
+<arg>select * from mydb.person</arg>
+<arg>6</arg>
+<doc>Check if the number of rows returned from ``selectStatement`` is greater than the value submitted. If not, then
+this will throw an AssertionError.</doc>
+<status status="NOT RUN" start="2024-07-11T12:12:57.395833" elapsed="0.000077"/>
+</kw>
+<kw name="Row Count Is Less Than X" owner="DatabaseLibrary">
+<arg>select * from mydb.person</arg>
+<arg>11</arg>
+<doc>Check if the number of rows returned from ``selectStatement`` is less than the value submitted. If not, then this
+will throw an AssertionError.</doc>
+<status status="NOT RUN" start="2024-07-11T12:12:57.396070" elapsed="0.000064"/>
+</kw>
+<status status="FAIL" start="2024-07-11T12:12:57.386587" elapsed="0.009771">Expected 10 rows, but 9 were returned from: 'select * from mydb.person'</status>
+</test>
+<test id="s1-s1-t2" name="update record in person table" line="34">
+<kw name="Execute Sql String" owner="DatabaseLibrary">
+<msg time="2024-07-11T12:12:57.397296" level="INFO">Executing : Execute SQL String  |  update mydb.person set first_name="Amir" where id=4;</msg>
+<msg time="2024-07-11T12:12:57.397895" level="INFO">${output} = None</msg>
+<var>${output}</var>
+<arg>update mydb.person set first_name="Amir" where id=4;</arg>
+<doc>Executes the ``sqlString`` as a single SQL command.</doc>
+<status status="PASS" start="2024-07-11T12:12:57.397097" elapsed="0.000849"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${output}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-07-11T12:12:57.398128" elapsed="0.000280"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<msg time="2024-07-11T12:12:57.398805" level="INFO">Argument types are:
+&lt;class 'NoneType'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${output}</arg>
+<arg>None</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-07-11T12:12:57.398582" elapsed="0.000301"/>
+</kw>
+<status status="PASS" start="2024-07-11T12:12:57.396695" elapsed="0.002360"/>
+</test>
+<test id="s1-s1-t3" name="retrieve records from person table" line="38">
+<kw name="Query" owner="DatabaseLibrary">
+<msg time="2024-07-11T12:12:57.400015" level="INFO">Executing : Query  |  select * from mydb.person; </msg>
+<msg time="2024-07-11T12:12:57.400752" level="INFO">@{queryResults} = [ (1, 'John', 'Doe') | (2, 'Jane', 'Smith') | (3, 'Alice', 'Johnson') | (4, 'Amir', 'Brown') | (5, 'Charlie', 'Davis') | (6, 'Diana', 'Evans') | (7, 'Ethan', 'Garcia') | (8, 'Fiona', 'Harris') | (10, ...</msg>
+<var>@{queryResults}</var>
+<arg>select * from mydb.person;</arg>
+<doc>Runs a query with the ``selectStatement`` and returns the result as a list of rows.
+The type of row values depends on the database module -
+usually they are tuples or tuple-like objects.</doc>
+<status status="PASS" start="2024-07-11T12:12:57.399756" elapsed="0.001047"/>
+</kw>
+<kw name="Log Many" owner="BuiltIn">
+<msg time="2024-07-11T12:12:57.401207" level="INFO">(1, 'John', 'Doe')</msg>
+<msg time="2024-07-11T12:12:57.401259" level="INFO">(2, 'Jane', 'Smith')</msg>
+<msg time="2024-07-11T12:12:57.401298" level="INFO">(3, 'Alice', 'Johnson')</msg>
+<msg time="2024-07-11T12:12:57.401337" level="INFO">(4, 'Amir', 'Brown')</msg>
+<msg time="2024-07-11T12:12:57.401372" level="INFO">(5, 'Charlie', 'Davis')</msg>
+<msg time="2024-07-11T12:12:57.401406" level="INFO">(6, 'Diana', 'Evans')</msg>
+<msg time="2024-07-11T12:12:57.401439" level="INFO">(7, 'Ethan', 'Garcia')</msg>
+<msg time="2024-07-11T12:12:57.401471" level="INFO">(8, 'Fiona', 'Harris')</msg>
+<msg time="2024-07-11T12:12:57.401504" level="INFO">(10, 'Hannah', 'King')</msg>
+<arg>@{queryResults}</arg>
+<doc>Logs the given messages as separate entries using the INFO level.</doc>
+<status status="PASS" start="2024-07-11T12:12:57.400991" elapsed="0.000564"/>
+</kw>
+<status status="PASS" start="2024-07-11T12:12:57.399335" elapsed="0.002395"/>
+</test>
+<test id="s1-s1-t4" name="Delete record from person table" line="42">
+<kw name="Execute Sql String" owner="DatabaseLibrary">
+<msg time="2024-07-11T12:12:57.402715" level="INFO">Executing : Execute SQL String  |  delete from mydb.person where id=9</msg>
+<msg time="2024-07-11T12:12:57.403506" level="INFO">${output} = None</msg>
+<var>${output}</var>
+<arg>delete from mydb.person where id=9</arg>
+<doc>Executes the ``sqlString`` as a single SQL command.</doc>
+<status status="PASS" start="2024-07-11T12:12:57.402500" elapsed="0.001059"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${output}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-07-11T12:12:57.403776" elapsed="0.000316"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<msg time="2024-07-11T12:12:57.404507" level="INFO">Argument types are:
+&lt;class 'NoneType'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${output}</arg>
+<arg>None</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-07-11T12:12:57.404274" elapsed="0.000312"/>
+</kw>
+<status status="PASS" start="2024-07-11T12:12:57.402081" elapsed="0.002690"/>
+</test>
+<kw name="Disconnect From Database" owner="DatabaseLibrary" type="TEARDOWN">
+<msg time="2024-07-11T12:12:57.405448" level="INFO">Executing : Disconnect From Database</msg>
+<doc>Disconnects from the database.</doc>
+<status status="PASS" start="2024-07-11T12:12:57.405283" elapsed="0.000311"/>
+</kw>
+<status status="FAIL" start="2024-07-11T12:12:57.208883" elapsed="0.196796"/>
+</suite>
+<status status="FAIL" start="2024-07-11T12:12:57.191145" elapsed="0.215446"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="1" skip="0" id="s1" name="TestCases">TestCases</stat>
+<stat pass="3" fail="1" skip="0" id="s1-s1" name="DBTesting">TestCases.DBTesting</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

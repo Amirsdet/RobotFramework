@@ -1,0 +1,19 @@
+==============================================================================
+TestCases                                                                     
+==============================================================================
+TestCases.tableValidation :: Simple example using SeleniumLibrary.            
+==============================================================================
+TC1                                                                   7
+4
+Master In Selenium
+| PASS |
+------------------------------------------------------------------------------
+TC2                                                                   | PASS |
+------------------------------------------------------------------------------
+TestCases.tableValidation :: Simple example using SeleniumLibrary.    | PASS |
+2 tests, 2 passed, 0 failed
+==============================================================================
+TestCases                                                             | PASS |
+2 tests, 2 passed, 0 failed
+==============================================================================
+Output:  /Users/amirouchemadaoui/PycharmProjects/RobotFramework/Results/pabot_results/17/output.xml

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.9.6 on darwin)" generated="2024-07-11T12:14:00.858131" rpa="false" schemaversion="5">
+<suite id="s1" name="TestCases" source="/Users/amirouchemadaoui/PycharmProjects/RobotFramework/TestCases">
+<suite id="s1-s1" name="mouseManipulation" source="/Users/amirouchemadaoui/PycharmProjects/RobotFramework/TestCases/mouseManipulation.robot">
+<test id="s1-s1-t1" name="Right click" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-11T12:14:01.118378" level="INFO">Opening browser 'chrome' to base url 'https://swisnl.github.io/jQuery-contextMenu/demo.html'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-11T12:14:01.117956" elapsed="2.672474"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-11T12:14:03.791129" elapsed="0.380240"/>
+</kw>
+<kw name="Open Context Menu" owner="SeleniumLibrary">
+<arg>xpath=//span[@class='context-menu-one btn btn-neutral']</arg>
+<doc>Opens the context menu on the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-11T12:14:04.171783" elapsed="0.300938"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-11T12:14:04.473957" level="INFO">Clicking element 'xpath=/html/body/ul/li[3]/span'.</msg>
+<arg>xpath=/html/body/ul/li[3]/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-11T12:14:04.473164" elapsed="0.127473"/>
+</kw>
+<kw name="Handle Alert" owner="SeleniumLibrary">
+<msg time="2024-07-11T12:14:04.601574" level="INFO">HANDLE::&lt;class 'NoneType'&gt;::None</msg>
+<arg>accept</arg>
+<doc>Handles the current alert and returns its message.</doc>
+<status status="PASS" start="2024-07-11T12:14:04.601059" elapsed="0.013270"/>
+</kw>
+<status status="PASS" start="2024-07-11T12:14:01.097705" elapsed="3.518077"/>
+</test>
+<test id="s1-s1-t2" name="Double click" line="20">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-07-11T12:14:04.631991" level="INFO">Opening url 'https://testautomationpractice.blogspot.com/'</msg>
+<arg>https://testautomationpractice.blogspot.com/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-07-11T12:14:04.631568" elapsed="5.512009"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-11T12:14:10.144100" elapsed="0.006426"/>
+</kw>
+<kw name="Double Click Element" owner="SeleniumLibrary">
+<msg time="2024-07-11T12:14:10.151584" level="INFO">Double clicking element 'xpath=//button[normalize-space()='Copy Text']'.</msg>
+<arg>xpath=//button[normalize-space()='Copy Text']</arg>
+<doc>Double clicks the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-11T12:14:10.150950" elapsed="5.300728"/>
+</kw>
+<status status="PASS" start="2024-07-11T12:14:04.630387" elapsed="10.821566"/>
+</test>
+<test id="s1-s1-t3" name="Drag and drop" line="25">
+<kw name="Drag And Drop" owner="SeleniumLibrary">
+<arg>id=draggable</arg>
+<arg>id=droppable</arg>
+<doc>Drags the element identified by ``locator`` into the ``target`` element.</doc>
+<status status="PASS" start="2024-07-11T12:14:15.452812" elapsed="10.556580"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<arg>xpath=//div[@id='droppable']</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-11T12:14:26.009684" elapsed="0.023185"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-07-11T12:14:36.034193" level="INFO">Slept 10 seconds.</msg>
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-07-11T12:14:26.033140" elapsed="10.001195"/>
+</kw>
+<status status="PASS" start="2024-07-11T12:14:15.452352" elapsed="20.582226"/>
+</test>
+<doc>Simple example using SeleniumLibrary.</doc>
+<status status="PASS" start="2024-07-11T12:14:00.918335" elapsed="35.116960"/>
+</suite>
+<status status="PASS" start="2024-07-11T12:14:00.878931" elapsed="35.157309"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="TestCases">TestCases</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s1" name="mouseManipulation">TestCases.mouseManipulation</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

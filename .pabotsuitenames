@@ -1,0 +1,22 @@
+datasources:a4a5141470c5146fd60e027cedb8f251bfd79f80
+commandlineoptions:97d170e1550eee4afc0af065b78cda302a97674c
+suitesfrom:no-suites-from-option
+file:580f14282a3936b91864a58f41d973458a7ae4dd
+--suite TestCases.Alerts
+--suite TestCases.DBTesting
+--suite TestCases.DDT1
+--suite TestCases.DDT2 excel
+--suite TestCases.Forloop
+--suite TestCases.Frames
+--suite TestCases.InputBox
+--suite TestCases.Introduction
+--suite TestCases.LoginTest
+--suite TestCases.RadioBtn
+--suite TestCases.RegisterPageTest
+--suite TestCases.Scshot
+--suite TestCases.SetupTeardown
+--suite TestCases.Tabbedwindow
+--suite TestCases.Userkeywords
+--suite TestCases.getAllLinks
+--suite TestCases.mouseManipulation
+--suite TestCases.tableValidation

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.9.6 on darwin)" generated="2024-07-11T12:51:43.909494" rpa="false" schemaversion="5">
+<suite id="s1" name="TestCases" source="/Users/amirouchemadaoui/PycharmProjects/RobotFramework/TestCases">
+<suite id="s1-s1" name="Forloop" source="/Users/amirouchemadaoui/PycharmProjects/RobotFramework/TestCases/Forloop.robot">
+<test id="s1-s1-t1" name="For loop5 with exit" line="27">
+<kw name="Create List" owner="BuiltIn">
+<msg time="2024-07-11T12:51:44.051838" level="INFO">@{numbers} = [ 1 | 2 | 3 | 4 | 5 ]</msg>
+<var>@{numbers}</var>
+<arg>1</arg>
+<arg>2</arg>
+<arg>3</arg>
+<arg>4</arg>
+<arg>5</arg>
+<doc>Returns a list containing given items.</doc>
+<status status="PASS" start="2024-07-11T12:51:44.051548" elapsed="0.000336"/>
+</kw>
+<for flavor="IN">
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-07-11T12:51:44.052376" elapsed="0.000221"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>${i}==3</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-11T12:51:44.052743" elapsed="0.000260"/>
+</kw>
+<var name="${i}">1</var>
+<status status="PASS" start="2024-07-11T12:51:44.052247" elapsed="0.000828"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-07-11T12:51:44.053322" elapsed="0.000210"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<arg>${i}==3</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-11T12:51:44.053667" elapsed="0.000240"/>
+</kw>
+<var name="${i}">2</var>
+<status status="PASS" start="2024-07-11T12:51:44.053206" elapsed="0.000773"/>
+</iter>
+<iter>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>${i}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-07-11T12:51:44.054222" elapsed="0.000206"/>
+</kw>
+<kw name="Exit For Loop If" owner="BuiltIn">
+<msg time="2024-07-11T12:51:44.054793" level="INFO">Exiting for loop altogether.</msg>
+<arg>${i}==3</arg>
+<doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
+<status status="PASS" start="2024-07-11T12:51:44.054560" elapsed="0.000307"/>
+</kw>
+<var name="${i}">3</var>
+<status status="PASS" start="2024-07-11T12:51:44.054105" elapsed="0.000837"/>
+</iter>
+<var>${i}</var>
+<value>@{numbers}</value>
+<status status="PASS" start="2024-07-11T12:51:44.052016" elapsed="0.002988"/>
+</for>
+<status status="PASS" start="2024-07-11T12:51:44.050651" elapsed="0.004503"/>
+</test>
+<doc>Simple example using SeleniumLibrary.</doc>
+<status status="PASS" start="2024-07-11T12:51:43.937776" elapsed="0.117764"/>
+</suite>
+<status status="PASS" start="2024-07-11T12:51:43.916537" elapsed="0.139647"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TestCases">TestCases</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Forloop">TestCases.Forloop</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

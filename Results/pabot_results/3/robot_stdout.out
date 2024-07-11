@@ -1,0 +1,18 @@
+==============================================================================
+TestCases                                                                     
+==============================================================================
+TestCases.DDT2 excel                                                          
+==============================================================================
+LoginTestWithExcel using admin@yourstore.com and asssss               | PASS |
+------------------------------------------------------------------------------
+LoginTestWithExcel using admsin@yourstore.com and ssss                | PASS |
+------------------------------------------------------------------------------
+LoginTestWithExcel using adm@yourstore.com and vassm                  | PASS |
+------------------------------------------------------------------------------
+TestCases.DDT2 excel                                                  | PASS |
+3 tests, 3 passed, 0 failed
+==============================================================================
+TestCases                                                             | PASS |
+3 tests, 3 passed, 0 failed
+==============================================================================
+Output:  /Users/amirouchemadaoui/PycharmProjects/RobotFramework/Results/pabot_results/3/output.xml

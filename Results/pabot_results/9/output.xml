@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.9.6 on darwin)" generated="2024-07-11T12:13:25.035955" rpa="false" schemaversion="5">
+<suite id="s1" name="TestCases" source="/Users/amirouchemadaoui/PycharmProjects/RobotFramework/TestCases">
+<suite id="s1-s1" name="RadioBtn" source="/Users/amirouchemadaoui/PycharmProjects/RobotFramework/TestCases/RadioBtn.robot">
+<test id="s1-s1-t1" name="Testing Radio Buttons and Check Boxes" line="9">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-07-11T12:13:25.296948" level="INFO">Opening browser 'chrome' to base url 'https://www.techlistic.com/p/selenium-practice-form.html'.</msg>
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-07-11T12:13:25.295806" elapsed="5.790221"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-07-11T12:13:31.087044" elapsed="0.542354"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-11T12:13:31.633281" level="INFO">Typing text 'amir' into text field 'firstname'.</msg>
+<arg>firstname</arg>
+<arg>amir</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-11T12:13:31.629930" elapsed="0.407797"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-07-11T12:13:32.039171" level="INFO">Typing text 'Madaoui' into text field 'lastname'.</msg>
+<arg>lastname</arg>
+<arg>Madaoui</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-07-11T12:13:32.038603" elapsed="0.202597"/>
+</kw>
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<msg time="2024-07-11T12:13:32.242056" level="INFO">Selecting 'Male' from radio button 'xpath=//*[@id="sex-0"]'.</msg>
+<msg time="2024-07-11T12:13:35.356026" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-07-11T12:13:35.356717" level="FAIL">No radio button with name 'xpath=//*[@id="sex-0"]' and value 'Male' found.</msg>
+<arg>xpath=//*[@id="sex-0"]</arg>
+<arg>Male</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="FAIL" start="2024-07-11T12:13:32.241613" elapsed="3.122771">No radio button with name 'xpath=//*[@id="sex-0"]' and value 'Male' found.</status>
+</kw>
+<kw name="Select Radio Button" owner="SeleniumLibrary">
+<arg>exp</arg>
+<arg>5</arg>
+<doc>Sets the radio button group ``group_name`` to ``value``.</doc>
+<status status="NOT RUN" start="2024-07-11T12:13:35.365085" elapsed="0.000192"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>id=datepicker</arg>
+<arg>16-10-2024</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-07-11T12:13:35.365660" elapsed="0.000128"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<arg>window.scrollTo(1011,1013)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" start="2024-07-11T12:13:35.366109" elapsed="0.000121"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<arg>id=profession-0</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-07-11T12:13:35.366600" elapsed="0.000131"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<arg>id=profession-1</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-07-11T12:13:35.367014" elapsed="0.000111"/>
+</kw>
+<kw name="Unselect Checkbox" owner="SeleniumLibrary">
+<arg>id=profession-0</arg>
+<doc>Removes the selection of checkbox identified by ``locator``.</doc>
+<status status="NOT RUN" start="2024-07-11T12:13:35.367459" elapsed="0.000141"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<arg>continents</arg>
+<arg>North America</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="NOT RUN" start="2024-07-11T12:13:35.368064" elapsed="0.000139"/>
+</kw>
+<kw name="Select From List By Index" owner="SeleniumLibrary">
+<arg>continents</arg>
+<arg>5</arg>
+<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
+<status status="NOT RUN" start="2024-07-11T12:13:35.368542" elapsed="0.000122"/>
+</kw>
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<arg>window.scrollTo(1311,1313)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" start="2024-07-11T12:13:35.368948" elapsed="0.000162"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<arg>id=selenium_commands</arg>
+<arg>WebElement Commands</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="NOT RUN" start="2024-07-11T12:13:35.369401" elapsed="0.000146"/>
+</kw>
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="NOT RUN" start="2024-07-11T12:13:35.369865" elapsed="0.000114"/>
+</kw>
+<status status="FAIL" start="2024-07-11T12:13:25.293042" elapsed="10.077554">No radio button with name 'xpath=//*[@id="sex-0"]' and value 'Male' found.</status>
+</test>
+<doc>Simple example using SeleniumLibrary.</doc>
+<status status="FAIL" start="2024-07-11T12:13:25.070175" elapsed="10.302241"/>
+</suite>
+<status status="FAIL" start="2024-07-11T12:13:25.044923" elapsed="10.329929"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TestCases">TestCases</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="RadioBtn">TestCases.RadioBtn</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
